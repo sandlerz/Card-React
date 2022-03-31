@@ -1,13 +1,142 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background-color: #23252C;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  font-family: 'Inter';
+}
+
+a{
+  font-weight: 500;
+}
+
+main{
+  position: relative;
+  background-color: #1A1B21;
+  height: 780px;
+  width: 317px; 
+  border-radius: 10px;
+  box-shadow: #1A1B21 0px 0px 100px 10px, #23252C 0px 0px 50px 1px,#23252C 0px 0px 30px 10px;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+}
+
+.header_profileImg {
+  width: 100%;
+  height: 317px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px -1px #23252C;
+}
+
+.header_profileImg img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+
+.header_name{
+  font-size: 25px;
+  margin-bottom: 3px; 
+}
+
+.header_career{
+  font-size: 14px;
+  color: #F3BF99;
+  margin-bottom: 7px;
+}
+
+.header_site{
+  font-size: 11px;
+  color: #F5F5F5;
+  margin-bottom: 15px;
+}
+
+.header_buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  margin-bottom: 28px;
+}
+
+.header_buttons a{
+  text-decoration: none;
+  width: 115px;
+  height: 34px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_buttons a img{
+  margin-right: 5px;
+  display: block;
+  max-width: 17px;
+  height: auto;
+}
+
+.email{
+  background-color: white;
+  color: black;
+}
+
+.linkedin{
+  background-color: #5093E2;
+  color: white;
+}
+
+.about{
+  width: 100%;
+  padding: 0 35px;
+}
+
+.about h2 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.about p {
+  font-size: 11px;
+  color: #DCDCDC;
+  line-height: 17px;
+  margin-bottom: 15px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #161619;
+  border-end-start-radius: 10px;
+  border-end-end-radius: 10px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 25px;
+  box-shadow: 0 -4px 10px -1px #23252C;
+}
+
+footer img {
+  cursor: pointer;
 }
